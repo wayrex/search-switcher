@@ -1,0 +1,11 @@
+:root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+body { margin: 0; background: Canvas; color: CanvasText; }
+main { max-width: 520px; margin: 48px auto; padding: 0 24px; }
+h1 { margin-bottom: 8px; }
+.intro { color: color-mix(in srgb, CanvasText 72%, Canvas); }
+form { display: grid; gap: 10px; margin-top: 28px; }
+.checkbox { margin-bottom: 10px; }
+select, button { font: inherit; padding: 9px 10px; border-radius: 7px; }
+select { margin-bottom: 12px; }
+button { justify-self: start; border: 0; background: #1a73e8; color: white; cursor: pointer; }
+#status { min-height: 1.3em; margin: 4px 0 0; color: #137333; }

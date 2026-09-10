@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Search Switcher settings</title>
+    <link rel="stylesheet" href="options.css">
+  </head>
+  <body>
+    <main>
+      <h1>Search Switcher</h1>
+      <p class="intro">Choose how the in-page search switcher behaves. Settings stay in this browser.</p>
+      <form id="settings">
+        <label class="checkbox"><input id="enabled" type="checkbox"> Show the switcher on supported result pages</label>
+        <label for="emphasis">Visually emphasize</label>
+        <select id="emphasis">
+          <option value="duckduckgo">DuckDuckGo</option>
+          <option value="google">Google</option>
+          <option value="maps">Maps</option>
+        </select>
+        <label for="theme">Theme</label>
+        <select id="theme">
+          <option value="system">Use system preference</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+        <button type="submit">Save settings</button>
+        <p id="status" role="status" aria-live="polite"></p>
+      </form>
+    </main>
+    <script src="options.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Search Switcher",
+  "version": "0.1.0",
+  "description": "Manually switch a search between DuckDuckGo, Google, and Google Maps.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://www.google.com/search*",
+    "https://duckduckgo.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.google.com/search*",
+        "https://duckduckgo.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  }
+}
