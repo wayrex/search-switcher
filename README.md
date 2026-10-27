@@ -11,6 +11,22 @@ Personal-use Chrome extension for switching searches between DuckDuckGo, Google 
 
 Use the extension's **Details** page and choose **Extension options** to configure visibility, emphasis, and theme.
 
+## Push updates to GitHub
+
+Sign in once with GitHub CLI:
+
+~~~powershell
+gh auth login -h github.com --web --git-protocol https
+~~~
+
+After committing changes, run this from PowerShell:
+
+~~~powershell
+.\scripts\push.ps1 origin main
+~~~
+
+The script passes the GitHub CLI credential to Git for that push only. It does not save a token in this repository.
+
 ## Notes
 
 - The switcher works on `https://duckduckgo.com/?q=...`, `https://www.google.com/search?q=...`, Google Maps searches, and Maps place pages. It stays hidden on Maps home and other non-search pages.
